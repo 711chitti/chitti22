@@ -1,0 +1,14 @@
+<div class="container">
+    <h1>{{myWheather.cityName}}</h1>
+    <h2>{{myWheather.temp}}</h2>
+    <div class="img">
+      <img src="{{myWheather.icon}}">
+      <h3>{{myWheather.wheatherKind}}</h3>
+      <h4>Max:{{myWheather.tempMax}}</h4>
+      <h4>Min:{{myWheather.tempMin}}</h4>
+    </div>
+  </div>
+  <form (onSubmit)="onSubmit(form)" #form="ngForm">
+    <input type="text" ngModel name="city" placeholder="Name of City">
+    <button name="button">go</button>
+  </form>
